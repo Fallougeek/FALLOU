@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+    <html lang="fr"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fusion</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+    
+        <nav class="navbar">
+            <div class="logo">
+                <img src="C:\Users\LENOVO\Desktop\doc\logo.JPG" alt="">
+                <span>Fusion</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#presentation">Présentation et Logotype </a></li>
+                <li><a href="#couleurs">Couleurs</a></li>
+                <li><a href="#typographie">Typographie</a></li>
+                <li><a href="#moodboard">Moodboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <section class="accueil">
+            <img src="C:\Users\LENOVO\Desktop\doc\concept.JPG" alt="Concept_et_marque">
+        </section>
+    
+        <section id="presentation" class="presentation">
+        <h1>Présentation du Logo «Fusion»</h1>
+        <p> FUSION est bien plus qu’un simple chocolat : c’est une expérience gourmande et engagée, où le plaisir 
+            du goût rencontre le respect de la planète. Notre marque repose sur trois valeurs fondamentales :
+             Éco-Responsabilité & Engagement Durable
+             Utilisation de cacao issu de l’agriculture biologique et du commerce équitable.
+             Emballages écologiques, recyclables et biodégradables.
+             Production respectueuse de l’environnement avec une empreinte carbone réduite.
+             Soutien aux producteurs locaux et initiatives de reforestation.
+             L’Art de l’Assemblage & des Saveurs
+             Une fusion unique entre des ingrédients naturels et des associations audacieuses.
+             Chocolats noir intense, lait onctueux et blanc fondant, enrichis d’épices, de fruits secs et d’arômes raffinés.
+             Des recettes créatives et équilibrées, pensées pour les gourmands et les connaisseurs.
+             Une Marque Inclusive & Responsable
+             Chocolats adaptés à tous les régimes : vegan, sans lactose, sans sucre raffiné.
+             Transparence sur l’origine des ingrédients et un savoir-faire artisanal.
+             Une communauté engagée autour de la gourmandise et du développement durable.
+             FUSION, c’est la rencontre entre l’authenticité et l’innovation, pour un chocolat qui fait du bien autant 
+            au palais qu’à la planète.</p>
+            <img src="C:\Users\LENOVO\Desktop\doc\lg.jpg" alt="">
+        </section>
+        <section id="couleurs" class="couleurs">
+            <h1>Couleurs</h1>
+            <img src="C:\Users\LENOVO\Desktop\doc\couleur.JPG" alt="">
+        </section>
+    
+        <section id="typographie" class="typographie btt">
+            <h1>Typographie</h1>
+            <img src="C:\Users\LENOVO\Desktop\doc\typo.JPG" alt="">
+        </section>
+    
+        <section id="moodboard" class="moodboard">
+            <h1>Moodboard</h1>
+            <img src="C:\Users\LENOVO\Desktop\doc\moodbord.JPG" alt="">
+            <img src="doc/moodbord.JP" alt="">
+        </section>
+        <section id="mockup" class="mockup">
+            <h1>Mockup</h1>
+            <img src="C:\Users\LENOVO\Desktop\doc\moc.JPG" alt="">
+            <img src="doc/moodbord.JP" alt="">
+        </section>
+        <section id="mockup" class="mockup">
+            <h1>Mockup</h1>
+            <img src="C:\Users\LENOVO\Desktop\doc\mocc.JPG" alt="">
+            <img src="doc/moodbord.JP" alt="">
+        </section>
+        
+    
+        <section>
+            <h1>Remerciement</h1>
+            <img src="C:\Users\LENOVO\Desktop\doc\merci.JPG" alt="">
+        </section>
+    
+        <section id="contact">
+            <h1>Contact</h1>
+            <form>
+                <input type="text" placeholder="Nom" required="">
+                <input type="email" placeholder="Email" required="">
+                <textarea placeholder="Message" required=""></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const menuToggle = document.querySelector(".menu-toggle");
+                const navLinks = document.querySelector(".nav-links");
+                const links = document.querySelectorAll(".nav-links a");
+            
+                menuToggle.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                    menuToggle.classList.toggle("active");
+                });
+            
+                links.forEach(link => {
+                    link.addEventListener("click", () => {
+                        navLinks.classList.remove("active");
+                        menuToggle.classList.remove("active");
+                    });
+                });
+            
+                // Effet de scroll pour changer la navbar
+                window.addEventListener("scroll", () => {
+                    const navbar = document.querySelector(".navbar");
+                    if (window.scrollY > 50) {
+                        navbar.style.background = "#111";
+                    } else {
+                        navbar.style.background = "#222";
+                    }
+                });
+            });
+            
+        </script>
+    
+    
+    </body></html>
+</body>
+</html>
